@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- <svg width="32" height="31" xmlns="http://www.w3.org/2000/svg"><g fill="#00001A" fill-rule="evenodd"><path d="m2.919.297 28.284 28.284-2.122 2.122L.797 2.419z"/><path d="M.797 28.581 29.081.297l2.122 2.122L2.919 30.703z"/></g></svg> -->
     <style>
       body {
         margin: 0;
@@ -11,16 +12,49 @@
         place-content: center;
         min-height: 100vh;
       }
+
       .wholecontainer {
-        width: 375px;
+        max-width: 1440px;
+      }
+      @media (min-width: 542px) {
+        .wholecontainer {
+          max-width: 1440px;
+        }
+        .hehe {
+            display: flex;
+            flex-direction: row;
+          max-width: 375px;
+          place-content: right;
+        
+        }
+        .objects{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .firstone{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+            width: 100%;
+            
+        }
+        .button{
+            display: grid;
+            grid-template-rows: 1fr;
+        }
       }
       .top1 {
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         font-weight: 700px;
         text-align: left;
+        
+        
       }
       .top1 img {
-        width: 370px;
+        width: 135%;
+        
+      }
+      .starting{
+        margin: 20px;
       }
       button {
         background-color: rgb(225, 93, 93);
@@ -36,6 +70,7 @@
       }
       .hehe {
         background-color: black;
+        width: 375px;
       }
       .new {
         color: yellow;
@@ -43,6 +78,7 @@
       .new1 {
         margin: 10px;
         padding: 10px;
+        width: 375px;
       }
       .middle {
         color: white;
@@ -56,6 +92,8 @@
       }
       .hydrogen {
         padding-bottom: 10px;
+        border-bottom: color(white white white white);
+        border-bottom: 5px;
       }
 
       .downsides {
@@ -69,6 +107,7 @@
       }
       .objects {
         display: grid;
+
       }
       .sec1 {
         display: grid;
@@ -104,25 +143,40 @@
       .line {
         margin: 0;
       }
+      @media (min-width: 375px) {
+        .starting {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          justify-content: end;
+          justify-items: end;
+        }
+      }
     </style>
   </head>
   <body>
     <div class="wholecontainer">
-      <div class="top1">
-        <img
-          src="news-homepage-main/assets/images/image-web-3-mobile.jpg"
-          alt=""
-        />
-        <h1>The Bright Future of Web 3.0 ?</h1>
-        <p>
-          We dive into the next evolution of the web that claims to put the
-          power of the platforms back into the hands of the people. But is it
-          really fulfilling its promise?
-        </p>
-        <div class="but1">
-          <button><p>Read more</p></button>
+      <div class="starting">
+        <div class="top1">
+          <img
+            src="news-homepage-main/assets/images/image-web-3-desktop.jpg"
+            alt=""
+          />
+          <div class="firstone">
+          <h1 >The Bright Future of Web 3.0 ?</h1>
+          <div class="secondin">
+          <p>
+            We dive into the next evolution of the web that claims to put the
+            power of the platforms back into the hands of the people. But is it
+            really fulfilling its promise?
+        
+          </p>
+          <div class="but1">
+            <button><p>Read more</p></button>
+          </div>
         </div>
-      </div>
+        </div>
+        </div>
+     
       <section class="hehe">
         <div class="new1">
           <div class="new"><h1>New</h1></div>
@@ -148,6 +202,8 @@
             </div>
           </div>
         </div>
+        </div>
+ 
       </section>
       <section>
         <div class="objects">
