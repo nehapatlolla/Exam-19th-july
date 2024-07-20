@@ -36,6 +36,17 @@
         .objects {
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;
+          padding: 20px;
+          margin: 20px;
+        }
+
+        .headerlist ul {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          gap: 1.5rem;
+          padding: 1.5rem 0px;
+          color: rgb(22, 19, 19);
         }
         .firstone {
           display: grid;
@@ -51,6 +62,11 @@
         font-family: "Inter", sans-serif;
         font-weight: 700px;
         text-align: left;
+      }
+
+      .top1 h1 {
+        padding: 20px;
+        margin: 20px;
       }
       .top1 img {
         width: 100%;
@@ -89,7 +105,7 @@
       @media (min-width: 888px) {
         .starting {
           display: grid;
-          grid-template-columns: 90% 10%;
+          grid-template-columns: 1fr 1fr;
 
           justify-content: end;
           justify-items: end;
@@ -100,6 +116,9 @@
       }
       .middle {
         color: white;
+      }
+      .button menu {
+        color: black;
       }
       .middle h2 {
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -113,6 +132,14 @@
         border-bottom: color(white white white white);
         border-bottom: 5px;
       }
+      .secondin p {
+        padding: 20px;
+        margin: 20px;
+      }
+      .but1 {
+        padding: 20px;
+        margin: 20px;
+      }
 
       .downsides {
         padding-bottom: 10px;
@@ -121,14 +148,17 @@
         padding-bottom: 10px;
       }
       .objects img {
-        width: 80%;
+        width: 70%;
       }
       .objects {
         display: grid;
+        padding: 20px;
+        margin: 20px;
       }
-      .sec1 {
+      .sec {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        padding-bottom: 10px;
       }
       .sec2 {
         display: grid;
@@ -158,7 +188,8 @@
         padding-bottom: 20px;
       }
       .line {
-        margin: 0;
+        border-top: 1px solid rgb(246, 246, 236);
+        margin: 10px 0;
       }
       .starting {
         /* display: grid;
@@ -166,14 +197,17 @@
         justify-content: end;
         justify-items: end;
       }
+      @media (max-width: 486px) {
+        .headerlist ul {
+          display: none;
+          appearance: none;
+        }
+      }
 
-      .headerlist ul {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        gap: 1.5rem;
-        padding: 1.5rem 0px;
-        color: rgb(22, 19, 19);
+      @media (min-width: 487px) {
+        .headerlist ul {
+          display: flex;
+        }
       }
     </style>
   </head>
@@ -204,6 +238,14 @@
             <li class="Popular"><a href="/"></a>Popular</li>
             <li class="Trending"><a href="/"></a>Trending</li>
             <li class="Categories"><a href="/"></a>Categories</li>
+            <div class="menu">
+              <svg width="40" height="17" xmlns="http://www.w3.org/2000/svg">
+                <g fill="#00001A" fill-rule="evenodd">
+                  <path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z" />
+                  <path d="M0 0h40v3H0z" />
+                </g>
+              </svg>
+            </div>
           </ul>
         </nav>
       </header>
@@ -222,7 +264,7 @@
                 But is it really fulfilling its promise?
               </p>
               <div class="but1">
-                <button><p>Read more</p></button>
+                <button>Read more</button>
               </div>
             </div>
           </div>
@@ -235,7 +277,7 @@
             <div class="hydrogen">
               <h2>Hydrogen VS Electric Cars</h2>
               <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-              <p class="line">—</p>
+              <p class="line"></p>
             </div>
             <div class="downsides">
               <h2>The Downsides of AI Artistry</h2>
@@ -243,6 +285,7 @@
                 What are the possible adverse effects of on-demand AI image
                 generation?
               </p>
+              <p class="line"></p>
             </div>
             <div class="vc">
               <h2>Is VC Funding Drying Up?</h2>
@@ -258,20 +301,19 @@
 
       <footer>
         <div class="objects">
-          <div class="sec1">
-            <div class="image1">
-              <img
-                src="news-homepage-main/assets/images/image-retro-pcs.jpg"
-                alt=""
-              />
-            </div>
+          <div class="sec">
+            <img
+              src="news-homepage-main/assets/images/image-retro-pcs.jpg"
+              alt=""
+            />
+
             <div class="info">
               <h1>01</h1>
               <h2>Reviving Retro PCs</h2>
               <p>What happens when old PCs are given modern upgrades?</p>
             </div>
           </div>
-          <div class="sec2">
+          <div class="sec">
             <img
               src="news-homepage-main/assets/images/image-top-laptops.jpg"
               alt=""
@@ -282,7 +324,7 @@
               <p>Our best picks for various needs and budgets.</p>
             </div>
           </div>
-          <div class="sec3">
+          <div class="sec">
             <img
               src="news-homepage-main/assets/images/image-gaming-growth.jpg"
               alt=""
