@@ -10,29 +10,23 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <!-- <svg width="32" height="31" xmlns="http://www.w3.org/2000/svg"><g fill="#00001A" fill-rule="evenodd"><path d="m2.919.297 28.284 28.284-2.122 2.122L.797 2.419z"/><path d="M.797 28.581 29.081.297l2.122 2.122L2.919 30.703z"/></g></svg> -->
+
     <style>
       body {
-        margin: 0;
         display: grid;
         place-content: center;
         min-height: 100vh;
+        max-width: 62rem;
+        margin: 0 auto;
       }
 
-      /* .wholecontainer {
-          min-width: 1440px;
-        } */
-
+      .headerlist ul {
+        display: none;
+      }
       @media (min-width: 782px) {
         .wholecontainer {
           max-width: 1440px;
         }
-        /* .new1 {
-            display: flex;
-            flex-direction: column;
-            max-width: 375px;
-            place-content: right;
-          } */
         .objects {
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;
@@ -65,8 +59,9 @@
       }
 
       .top1 h1 {
-        padding: 20px;
         margin: 20px;
+        font-weight: 800;
+        font-size: 2.8rem;
       }
       .top1 img {
         width: 100%;
@@ -80,33 +75,32 @@
       }
       button p {
         font-weight: 800;
-        /* text-align: center; */
         font-family: "Inter", sans-serif;
         text-transform: uppercase;
         letter-spacing: 4px;
       }
       .hehe {
         background-color: black;
-        width: 375px;
         padding: 30px;
       }
       .new {
-        color: yellow;
+        color: hsl(5, 85%, 63%);
+        font-size: 1.5rem;
+      }
+      .new1 h1 {
+        margin: 0;
       }
       @media (max-width: 640px) {
         .hehe {
           margin: 10px;
           padding: 10px;
-          /* width: px; */
-          /* display: grid; */
-          /* flex-direction: column; */
         }
       }
       @media (min-width: 888px) {
         .starting {
           display: grid;
-          grid-template-columns: 1fr 1fr;
-
+          grid-template-columns: 2fr 1fr;
+          gap: 4rem;
           justify-content: end;
           justify-items: end;
         }
@@ -133,11 +127,10 @@
         border-bottom: 5px;
       }
       .secondin p {
-        padding: 20px;
         margin: 20px;
+        line-height: 1.8;
       }
       .but1 {
-        padding: 20px;
         margin: 20px;
       }
 
@@ -148,11 +141,14 @@
         padding-bottom: 10px;
       }
       .objects img {
-        width: 70%;
+        width: 60%;
+      }
+      .info {
+        width: 100%;
       }
       .objects {
         display: grid;
-        padding: 20px;
+        /* padding: 20px; */
         margin: 20px;
       }
       .sec {
@@ -160,14 +156,7 @@
         grid-template-columns: 1fr 1fr;
         padding-bottom: 10px;
       }
-      .sec2 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-      }
-      .sec3 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-      }
+
       .objects h1 {
         color: rgb(229, 75, 75);
         font-size: 45px;
@@ -192,22 +181,8 @@
         margin: 10px 0;
       }
       .starting {
-        /* display: grid;
-          grid-template-columns: 1fr 1fr; */
         justify-content: end;
         justify-items: end;
-      }
-      @media (max-width: 486px) {
-        .headerlist ul {
-          display: none;
-          appearance: none;
-        }
-      }
-
-      @media (min-width: 487px) {
-        .headerlist ul {
-          display: flex;
-        }
       }
     </style>
   </head>
@@ -271,7 +246,6 @@
         </div>
         <section class="hehe">
           <div class="gap"></div>
-          <!-- <div class="new1"> -->
           <div class="new"><h1>New</h1></div>
           <div class="middle">
             <div class="hydrogen">
@@ -295,7 +269,6 @@
               </p>
             </div>
           </div>
-          <!-- </div> -->
         </section>
       </div>
 
